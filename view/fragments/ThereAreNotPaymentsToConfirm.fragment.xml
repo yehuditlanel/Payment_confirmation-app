@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns:core='sap.ui.core'>
+	<HBox xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns="sap.m" width="100%" id="hbox5_1598428788238"
+		justifyContent="Center">
+		<items>
+			<VBox width="95%" direction="Column" id="vbox0_1598428798641">
+				<items>
+					<HBox xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+						xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns="sap.m" class="Rectangle" visible="{=${Items>/Total}===0}"
+						width="100%" id="hbox5_1598178923032" justifyContent="Center">
+						<items>
+							<VBox width="100%" direction="Column" id="vbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
+								<items>
+									<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 61 61" fill="none" id="xmlview3">
+										<path
+											d="M52 41H56V57C56 58.1667 55.5833 59.125 54.75 59.875C54 60.625 53.0833 61 52 61H4C2.83333 61 1.875 60.625 1.125 59.875C0.375 59.125 0 58.1667 0 57V9C0 7.91667 0.375 7 1.125 6.25C1.875 5.41667 2.83333 5 4 5H20V9H4V57H52V41ZM59.5 4.125C60.0833 4.70833 60.1667 5.375 59.75 6.125L36.625 40.125C36.375 40.625 35.9583 40.9167 35.375 41C34.7917 41.0833 34.2917 40.9167 33.875 40.5L18.25 23.125C17.5 22.375 17.5 21.625 18.25 20.875L20.875 18.25C21.7083 17.4167 22.5 17.4167 23.25 18.25L33.25 28.25C33.6667 28.6667 34.125 28.8333 34.625 28.75C35.2083 28.6667 35.625 28.3333 35.875 27.75L54.125 1.875C54.375 1.375 54.75 1.08333 55.25 1C55.8333 0.916667 56.3333 1.08333 56.75 1.5L59.5 4.125Z"
+											fill="#003F80"/>
+									</svg>
+									<FlexBox height="12px" id="box8"/>
+									<Title xmlns="sap.m" class="ThereAreNotPaymentsToConfirm" text="{i18n>ThereAreNotPaymentsToConfirm}" id="title9_1598178957780"
+										textAlign="Center"/>
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+				</items>
+			</VBox>
+		</items>
+	</HBox>
+</core:FragmentDefinition>

@@ -1,0 +1,321 @@
+/* Enter your custom styles here */
+
+.sapContrast.sapMMessageToast {
+    position: absolute;
+    width: 181px !important;
+    height: 93px;
+    left: 82px;
+    top: 469px;
+    font-size: 24px;
+    background: #022447;
+    opacity: 0.9;
+    align-items: center;
+}
+
+div.sapMMesageToast.sapUiSelectable.sapContrast.sapContrastPlus {
+    width: 7rem;
+}
+
+.sapMCbBg {
+    border-radius: 50%;
+    background-color: #003F80;
+}
+
+.sapMTB {
+    background-color: #003F80;
+}
+
+.sapMTB-Transparent-CTX .sapMLabel {
+    color: white;
+    font-size: 22px;
+}
+
+.sapMInputBase.sapMTextArea .sapMTextAreaInner {
+    border: 1px solid #006CB2;
+}
+
+.sapMLabel {
+    color: #003F80;
+    font-size: 14px;
+}
+
+.onSelect .sapMLabel {
+    color: white;
+    opacity: 0.6;
+}
+
+.sapMText {
+    font-size: 18px;
+}
+
+.onSelect .sapMText {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.xsmall {
+    font-size: 10px;
+}
+
+.sapContrast.sapMIBar-CTX.sapMFooter-CTX,
+.sapContrast .sapMIBar-CTX.sapMFooter-CTX {
+    background: #004080;
+    background-image: none;
+}
+
+
+/*popupReject*/
+
+.dailog {
+    position: absolute;
+    width: 343px;
+    /*height: 292px;*/
+    left: 10px;
+    top: 45px;
+}
+
+.sapMPanelBGTranslucent {
+    background-color: transparent;
+    background-color: white;
+}
+
+.onSelect .sapMPanelBGTranslucent {
+    background-color: #006CB2;
+}
+
+.sapContrast.sapMBtnInner,
+.sapContrast .sapMBtnInner {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #435667;
+    border: 1px solid #a0b2c1;
+    color: #003F80;
+    /* text-shadow: 0 0 0.125rem #000000; */
+    font-size: 18px;
+    font-family: Heebo;
+}
+
+.paymentConfirmation .sapUiIcon::before {
+    content: attr(data-sap-ui-icon-content);
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    color: #003F80;
+}
+
+.sapMPage,
+.sapMPage>section {
+    width: 100%;
+    background-color: gray;
+}
+
+.sapMIBar.sapMHeader-CTX {
+    background-color: #003f80;
+}
+
+.myImage {
+    border: 1px solid #D6E2F1;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 46px;
+    height: 46px;
+}
+
+.header2 {
+    background-color: #006cb2;
+    font-size: 10px;
+    color: white;
+    height: 34px;
+}
+
+.header2 .sapMTitle {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.headerTS .sapMTitle {
+    color: white;
+}
+
+.sapMIBar-CTX .sapMTitle {
+    color: white;
+}
+
+.name {
+    font-size: 22px;
+    height: 25px;
+    top: 3px;
+}
+
+.role {
+    opacity: 0.6;
+    font-size: 14px;
+    bottom: 3px;
+}
+
+.sapMShellBrandingBar {
+    display: none;
+}
+
+.titleHeader2 .sapMTitle {
+    opacity: 0.6;
+}
+
+.sapContrast.sapMBtn,
+.sapContrast .sapMBtn {
+    background: #FFFFFF;
+    border: 3px solid #006CB2;
+    box-sizing: border-box;
+}
+
+.labelOfItem .sapMLabel {
+    color: #003F80;
+}
+
+.sapContrast.sapMFlexBoxBGTransparent,
+.sapContrast .sapMFlexBoxBGTransparent {
+    background-color: transparent;
+    background-color: #004080;
+    ;
+}
+
+.sapMDialog>header.sapMDialogTitle .sapMImg {
+    height: 22px;
+    margin-left: 0.625rem;
+    margin-top: 0.625rem;
+    vertical-align: middle;
+    /* width: 2.25rem; */
+    width: 22px;
+}
+
+.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX,
+.sapMDialog.sapMPopup-CTX>header .sapMSubHeader-CTX {
+    background-color: #f3c9c9;
+}
+
+.titlePopup {
+    font-size: 24px;
+}
+
+.sapMIBar-CTX .sapMLabel {
+    color: black;
+}
+
+.reject .sapMBtnText>.sapMBtnIcon {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    width: 15px;
+}
+
+.closeIcon .sapMBtnText>.sapMBtnIcon {
+    /*position: absolute;*/
+    /*top: 0.8rem;*/
+    left: 1rem;
+    width: 18px;
+}
+
+.rejectButton .sapMBtnInner.sapMBtnText.sapMBtnIconFirst,
+.sapMBtnInner.sapMBtnText.sapMBtnBack {
+    font-family: SAP-icons;
+    width: 100px;
+    height: 40px;
+    /*background: #E5E5E5;*/
+    background: #d9dcde;
+    border: 3px solid #C80B0B;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-radius: 0px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+
+/*css to button select all*/
+
+.button .sapMBtnInner {
+    position: absolute;
+    background-color: #022447;
+    color: white;
+    height: 50px;
+}
+
+.icon .sapUiIcon::before {
+    color: white;
+}
+
+.viewState .sapMFlexItem {
+    background-color: #003f80;
+    width: 55px;
+    height: 50px;
+}
+
+.sapMPage,
+.sapMPage>section {
+    width: 100%;
+    background-color: gray;
+}
+
+.TitleSelectedAndTotal {
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.ViewSelectedAndTotal {
+    font-size: 18px;
+    top: -4px;
+}
+
+.sapMTB {
+    border-bottom: none;
+}
+
+.Rectangle .sapMFlexBoxAlignItemsCenter {
+    height: 529px;
+    background: #FFFFFF;
+}
+
+.ThereAreNotPaymentsToConfirm {
+    font-size: 24px;
+}
+
+.flex .sapMFlexItem {
+    background: #003F80;
+    width: 55px;
+    height: 50px;
+    text-align: center;
+    top: 0.25rem;
+}
+
+.selectAll .sapMBtnInner {
+    background-color: #022447;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+}
+
+.selectAll .sapMBtnContent {
+    font-size: 18px;
+    color: white;
+    line-height: 2.9rem;
+}
+
+.selectAll .sapUiIcon::before {
+    color: white;
+}
+
+.marginTop {
+    margin-top: 4px;
+}

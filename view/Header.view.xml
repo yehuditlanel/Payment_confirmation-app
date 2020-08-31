@@ -1,0 +1,38 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="demo.FinalProject.controller.Header">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				  
+				</content>
+			<customHeader>
+			     <Toolbar width="100%" id="toolbar1">
+						<content>
+							<HBox width="100%" id="hbox0">
+								<items>
+									<HBox width="100%" id="hbox1">
+										<items>
+											<FlexBox height="12px"/>
+											<Image class="marginTop myImage" src="{Photo}" width="47px" id="image0"/>
+											<FlexBox width="10px"/>
+											<VBox class="marginTop" width="100%" direction="Column" id="vbox0">
+												<items>
+													<Title class="name" text="{Name}"/>
+													<Title class="role" text="{Role}" id="text1"/>
+												</items>
+											</VBox>
+										</items>
+									</HBox>
+									<HBox alignItems="Center">
+										<Image src="data:image/png;base64,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" width="70px" id="image1"/>
+										<FlexBox width="7px"/>
+									</HBox>
+								</items>
+							</HBox>
+						</content>
+					</Toolbar>
+			</customHeader>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

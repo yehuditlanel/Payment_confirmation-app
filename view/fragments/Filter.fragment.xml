@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:core='sap.ui.core'>
+	<HBox xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns="sap.m" justifyContent="Center" width="100%"
+		id="hbox5_1598197410550">
+		<items>
+			<VBox width="95%" direction="Column" id="vbox0_1598197417911">
+				<items>
+					<FlexBox height="5px" id="box9"/>
+					<HBox visible="{=${Items>/Total}!==0}" width="100%" id="hbox11">
+						<items>
+							<Button xmlns="sap.m" class="selectAll" text="{i18n>selectAll}" id="button1" icon="sap-icon://sys-enter" width="220px" press="onSelectedAll"/>
+							<FlexBox width="30px" id="box4"/>
+							<VBox class="flex headerTS" width="55px" direction="Column" id="vbox2" height="50px">
+								<items>
+									<Title class="TitleSelectedAndTotal" xmlns="sap.m" text="{i18n>Total}" id="title7"/>
+									<Title class="ViewSelectedAndTotal" xmlns="sap.m" text="{Items>/Total}" id="title8"/>
+								</items>
+							</VBox>
+							<FlexBox width="30px" id="box5"/>
+							<VBox class="flex headerTS" width="100%" direction="Column" id="vbox3" height="50px">
+								<items>
+									<Title class="TitleSelectedAndTotal" xmlns="sap.m" text="{i18n>Selected}" id="title9"/>
+									<Title class="ViewSelectedAndTotal" xmlns="sap.m" text="{Items>/Selected}" id="title10"/>
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+					<FlexBox height="10px" id="box10"/>
+				</items>
+			</VBox>
+		</items>
+	</HBox>
+</core:FragmentDefinition>

@@ -1,0 +1,34 @@
+<core:FragmentDefinition xmlns:core='sap.ui.core'>
+	<Toolbar xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns="sap.m" width="100%" id="toolbar1_1597313381588">
+		<content>
+			<HBox width="100%" id="hbox1">
+				<items>
+					<HBox alignItems="Center" alignContent="Center" justifyContent="Center" width="50%">
+						<Button xmlns="sap.m" class="a paymentConfirmation" width="175px" text="{i18n>paymentConfirmation}" id="buttonOK" icon="sap-icon://accept" press="onOK"/>
+					</HBox>
+					<VBox width="50%" direction="Column" id="vbox2">
+						<items>
+							<Title class="TitleSelectedAndTotal" xmlns="sap.m" text="{i18n>totalForOK}"/>
+							<HBox>
+								<Title class="xsmall" xmlns="sap.m" text="{i18n>ILS}"/>
+								<FlexBox width="5px"/>
+								<Title xmlns="sap.m" text="{path:'Amount>/AmountILS',type:'sap.ui.model.odata.type.Decimal',constraints:{scale:2}}"/>
+							</HBox>
+							<HBox visible="{= ${Amount>/AmountUSD}!==0}">
+								<Title class="xsmall" xmlns="sap.m" text="{i18n>USD}"/>
+								<FlexBox width="5px"/>
+								<Title xmlns="sap.m" text="{Amount>/AmountUSD}"/>
+							</HBox>
+							<HBox visible="{= ${Amount>/AmountEUR}!==0}">
+								<Title class="xsmall" xmlns="sap.m" text="{i18n>EUR}"/>
+								<FlexBox width="5px"/>
+								<Title xmlns="sap.m" text="{Amount>/AmountEUR}"/>
+							</HBox>
+						</items>
+					</VBox>
+				</items>
+			</HBox>
+		</content>
+	</Toolbar>
+</core:FragmentDefinition>

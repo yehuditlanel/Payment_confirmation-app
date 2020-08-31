@@ -1,0 +1,84 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns="sap.m" controllerName="demo.FinalProject.controller.App" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}" showFooter="{=${Items>/Total}!==0}">
+				<footer>
+					<core:Fragment xmlns:core="sap.ui.core" fragmentName="demo.FinalProject.view.fragments.Footer" type="XML" id="toolbar1_1597313381588"/>
+				</footer>
+				<content>
+					<core:Fragment xmlns:core="sap.ui.core" fragmentName="demo.FinalProject.view.fragments.SubHeader" type="XML" id="hbox1_1597065327147"/>
+					<core:Fragment xmlns:core="sap.ui.core" fragmentName="demo.FinalProject.view.fragments.Filter" type="XML" id="hbox5_1598197410550"/>
+					<HBox width="100%" id="hbox5" justifyContent="Center">
+						<items>
+							<VBox items="{/Payments}" width="95%" direction="Column" id="vboxItems">
+								<items>
+									<VBox visible="{=${Status}===2?true:false}" width="100%" direction="Column" id="vboxItem">
+										<items>
+											<Panel xmlns="sap.m" width="auto" expanded="true">
+												<headerToolbar>
+													<Toolbar id="toolbar1_copy_vbox0_0">
+														<CheckBox xmlns="sap.m" xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" dt:id="{Id}" dt:amount="{Amount}" dt:currency="{Currency}" text="{i18n>SelectAPayRun}" selected="false" id="checkBox" select="onSelect"/>
+														<content/>
+													</Toolbar>
+												</headerToolbar>
+												<content>
+													<HBox width="100%" id="hbox0_copy_vbox0_0">
+														<items>
+															<VBox width="65%" direction="Column" id="vbox0_1597163835674_copy_vbox0_0">
+																<items>
+																	<Label text="{i18n>AmountToBeApproved}" width="100%" id="label0_copy_vbox0_0"/>
+																	<HBox id="hbox2_vbox0_0">
+																		<Text text="{Currency}" class="small"/>
+																		<Text class="bold" text="{path:'Amount',type:'sap.ui.model.odata.type.Decimal',constraints:{scale:2}}" width="100%" id="label1_copy"/>
+																	</HBox>
+																	<FlexBox height="5px" id="box1_copy_vbox0_0"/>
+																	<Label text="{i18n>MaximumAmount}" width="100%" id="label2_copy_vbox0_0"/>
+																	<HBox>
+																		<Text text="{Currency}" class="xsmall"/>
+																		<Text text="{path:'MaxPayment',type:'sap.ui.model.odata.type.Decimal',constraints:{scale:2}}" width="100%" />
+																	</HBox>
+																	<FlexBox height="5px" id="box2_copy_vbox0_0"/>
+																	<Label text="{i18n>Description}" width="100%" id="label4_copy_vbox0_0"/>
+																	<Text text="{Description}" width="100%" id="label5_copy_vbox0_0"/>
+																	<FlexBox height="5px" id="box3_copy_vbox0_0"/>
+																	<Label text="{i18n>firstApprover}" width="100%" id="label6_vbox0_0"/>
+																	<Text text="{FirstApprover}" width="100%" id="label7_vbox0_0"/>
+																	<FlexBox height="5px" id="box1_vbox0_0"/>
+																	<Label text="{i18n>Status}" width="100%" id="label8_vbox0_0"/>
+																	<Text text="{=${Status}===1?'ממתין לחותם ראשון':'ממתין לחותם שני'}" width="100%" id="label9_vbox0_0"/>
+																</items>
+															</VBox>
+															<VBox width="35%" direction="Column" id="vbox1_copy_vbox0_0">
+																<items>
+																	<VBox alignItems="End" height="50%" id="vbox2_vbox0_0">
+																		<Text text="{ path: 'PaymentDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'dd.MM.yyyy' } }"/>
+																	</VBox>
+																	<VBox height="50%" justifyContent="End" alignContent="End" alignItems="End" id="vbox3_vbox0_0">
+																		<Button xmlns:dt="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="rejectButton reject" dt:id="{Id}" text="{i18n>rejection}" icon="css/images/75519.png" press="onOpenPopup"/>
+																	</VBox>
+																</items>
+															</VBox>
+														</items>
+													</HBox>
+												</content>
+											</Panel>
+											<FlexBox height="7px" id="box7"/>
+										</items>
+									</VBox>
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+					<core:Fragment xmlns:core="sap.ui.core" fragmentName="demo.FinalProject.view.fragments.ThereAreNotPaymentsToConfirm" type="XML" id="hbox5_1598428788238"/>
+				</content>
+				<customHeader>
+					<Toolbar width="100%" id="toolbar1">
+						<content>
+							<mvc:XMLView viewName="demo.FinalProject.view.Header"/>
+						</content>
+					</Toolbar>
+				</customHeader>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
